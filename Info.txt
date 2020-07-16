@@ -1,0 +1,4 @@
+Irei iniciar um estudo de HTML a partir de 16.07.2020 seguindo o tutorial:
+https://www.w3schools.com/html/default.asp
+E prosseguirei postando aqui todos os exemplos que fizer com o intuito de praticar 
+os fundamentos do git bem como HTML.
