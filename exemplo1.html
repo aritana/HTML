@@ -1,5 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang =  "en-US">
+    <head>
+        <style>
+        p {
+            font-family: Verdana,sans-serif;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        </style>
+    </head>
     <title>HTML Tutorial</title>
     <body>
 
@@ -12,5 +21,120 @@
         <p>Estou iniciando um tutorial no site: <a href = "https://www.w3schools.com"  target="_blank"><br><img src="img/w3schools.jpg" alt = "W3schools" ></a><br>
             
         </p>
+            <hr>
+            <h1> HTML Attributes</h1>
+            <ul>
+                <li>All HTML elements can have attributes</li>
+                <li>Attributes provide additional information about elements</li>
+                <li> Attribute are always specified in the <b>start tag</b></li>
+                <li> Attributes usually come in name/value pairs like : <strong>name = "value"</strong></li>
+           
+            </ul>
+            <h3> Example</h3>
+                <pre>
+                    <code>
+                         &lt;a href = "https://www.w3schools.com" target="_blank" &lt;/a&gt;
+                    </code>
+                </pre>
+            Dando origem à: <a href = "https://www.w3schools.com" target="_blank">Visit W3Schools."</a>
+            The &lt;a&gt; tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to.
+        <p>
+        <p>
+            <hr>
+            <h2> The src attribute</h2>
+            The &lt;img&gt; tag is used to embed an imagem in a HTML page. The <strong>src</strong> 
+            attribute specifies the path to the image to be displayed. Should also contain the width and height attributes, 
+            which specifies the <strong>width</strong> and <strong>height</strong> of the image (in pixels), the <strong>alt</strong> tags 
+            specifies an alternate text for an image, if the image for some reason cannot be displayed.
+            This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader:
+            <h3> Example</h3>
+            <pre>
+                <code>
+                     &lt;img src="img_girl.jpg" width = "500" height = "600" alt =  "Girl with a jacket"&gt;
+                </code>
+            </pre>
+         <img src = "../img/img_girl.jpg" width = "500" height = "600" alt =  "Girl with a jacket">
+       
+        </p>
+            <h2>The style Attribute</h2>
+            The <strong>style</strong> attribute is used to add styeles to an elment, such as color, font, size, and more.
+            <h3> Example</h3>
+                <pre>
+                    <code>
+                         &lt;p style="color:red;font-size: 30px;">This is a red paragraph. &lt;/p&gt;
+                    </code>
+                </pre>   
+                <p style =  "color:red;font-size: 30px;">This is a red paragraph with a font-size of 30 pixels</p>         
+           
+        </p>
+        <p>
+           <h2> The lang Attributes</h2>
+           You should always include the <strong>lang</strong>
+            attribute inside  the &lt;html&gt; tag, to declare the language of the Web page. This is meant
+            to assist search engines and browsers.
+
+            The following example specifies English as the language:
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;body&gt;
+                    ...
+                    &lt;/body&gt;
+                    &lt;/html&gt;  
+                </code>
+            </pre>
+            Country codes can also be added to the language code in the <strong>lang</strong>
+            attribute. So, the first two characters define the language of the HTML page, and the last two characters define de country.
+
+            The following example specifies English as the language and Unite States as the country:
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en-US"&gt;
+                    &lt;body&gt;
+                    ...
+                    &lt;/body&gt;
+                    &lt;/html&gt;  
+                </code>
+            </pre>            
+        </p>
+        <P>
+           <h2>Suggestions</h2> 
+           The HTML standard does not requires lowercase attribute names.
+           However, W3C recommends lowercase attributes in HTML, and demandas lowercase attirubes for stricter document types like XHTML.
+
+           The HTML standard does not required quotes around attribute values.
+           However, W3C recommends quotes in HTML, and demands quotes for stricter document types like XHTML.
+
+           <h3 style= "color:blue;" > Good:</h3>
+                <pre>
+                    <code>
+                        &lt;a href="https://www.w3schools.com/html/">Visit our HTML tutorial&gt;
+                    </code>
+                </pre>
+           <h3 style= "color:blue;""> Bad</h3>
+                <pre>
+                    <code>
+                        &lt;a href=https://www.w3schools.com/html/>Visit our HTML tutorial&gt;
+                    </code>
+                </pre>
+        </P>
+        <p title = "Single or Double Quotes">
+            <h2>Single or Double Quotes</h2>
+            Double quotes around attribute vales are the most common in HTML,
+            but singl quotes can also be used.
+            <br>
+            In some situations, when the attribute value itself contains double quotes, it is 
+            necessary to use single quotes, or vice versa:
+            <pre>
+                <code>
+                    &lt;p title='John "ShotGun" Nelson'&gt;&lt;/p&gt;
+                    &lt;p title="John 'ShotGun' Nelson"&gt;&lt;/p&gt;
+                </code>
+            </pre>
+        </p>
+
+
     </body>
 </html>
